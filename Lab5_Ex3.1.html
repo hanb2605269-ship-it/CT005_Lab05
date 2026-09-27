@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Trang giới thiệu Nguyễn Thị Ngọc Hân và các sản phẩm Lab 05.">
+	<title>Nguyễn Thị Ngọc Hân | Lab 05</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			color: #172a35;
+			background: #f2f5f2;
+			font-family: "Segoe UI", sans-serif;
+			line-height: 1.6;
+		}
+
+		header {
+			padding: 2.5rem 1.25rem 2rem;
+			color: #fff;
+			background: #176b67;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0 0 0.5rem;
+			font-size: clamp(1.8rem, 5vw, 2.6rem);
+		}
+
+		header p {
+			max-width: 42rem;
+			margin: 0 auto;
+		}
+
+		.profile-details {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 0.5rem 1.5rem;
+			margin: 1.25rem 0 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.profile-details strong {
+			margin-right: 0.35rem;
+		}
+
+		main {
+			width: min(100% - 2rem, 58rem);
+			margin: 2rem auto;
+		}
+
+		section {
+			margin-bottom: 2rem;
+		}
+
+		h2 {
+			margin: 0 0 0.75rem;
+			color: #176b67;
+			font-size: 1.45rem;
+		}
+
+		figure {
+			margin: 0;
+			padding: 1rem;
+			background: #fff;
+			border: 1px solid #d8e2dd;
+			border-radius: 6px;
+		}
+
+		figure img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		figure embed {
+			display: block;
+			max-width: 100%;
+			border: 0;
+		}
+
+		figcaption {
+			margin-top: 0.75rem;
+			color: #52646b;
+			font-size: 0.9rem;
+		}
+
+		.video-frame {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			overflow: hidden;
+			background: #172a35;
+		}
+
+		.video-frame iframe {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+
+		footer {
+			padding: 1.25rem;
+			color: #52646b;
+			background: #e4ebe6;
+			text-align: center;
+			font-size: 0.88rem;
+		}
+
+		footer p {
+			max-width: 58rem;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Nguyễn Thị Ngọc Hân</h1>
+		<p>Sinh viên ngành Truyền thông đa phương tiện. Dưới đây là các sản phẩm thực hiện trong Lab 05.</p>
+		<ul class="profile-details" aria-label="Thông tin cá nhân">
+			<li><strong>MSSV:</strong> B2605269</li>
+			<li><strong>Ngành:</strong> Truyền thông đa phương tiện</li>
+		</ul>
+	</header>
+
+	<main>
+		<section aria-labelledby="pdf-title">
+			<h2 id="pdf-title">Sản phẩm 1: Bài tập 1.2</h2>
+			<figure>
+				<embed src="Lab05_Ex1.2.pdf" type="application/pdf" width="100%" height="600px">
+				<figcaption>Bài làm PDF của bài tập 1.2 trong Lab 05.</figcaption>
+			</figure>
+		</section>
+
+		<section aria-labelledby="infographic-title">
+			<h2 id="infographic-title">Sản phẩm 2: Infographic bài tập 2.1</h2>
+			<figure>
+				<img src="Lab05_Ex2.1.png" alt="Infographic bài tập 2.1" style="max-width:100%; height:auto;" loading="lazy">
+				<figcaption>Infographic tóm tắt nội dung và ý tưởng của bài tập 2.1.</figcaption>
+			</figure>
+		</section>
+
+		<section aria-labelledby="video-title">
+			<h2 id="video-title">Sản phẩm 3: Video bài tập 2.2</h2>
+			<div class="video-frame">
+				<iframe
+					src="https://www.youtube.com/embed/8fpDaMwGgFU"
+					title="Video YouTube bài tập 2.2"
+					loading="lazy"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen>
+				</iframe>
+			</div>
+			<p>Video trình bày sản phẩm và nội dung thực hiện cho bài tập 2.2.</p>
+			<p><small>Bản quyền video thuộc về tác giả hoặc đơn vị phát hành trên YouTube. Video được nhúng phục vụ mục đích học tập.</small></p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Bản quyền infographic và video thuộc về các tác giả hoặc đơn vị phát hành tương ứng. Trang được thực hiện phục vụ mục đích học tập.</p>
+	</footer>
+</body>
+</html>
